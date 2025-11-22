@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+        <script src="JS/Contact.js"></script>
+    </head>
+    
+    <Body>
+        <div class="box">
+        <header>
+            <h1>Contact</h1>
+            <nav>
+               <ul> 
+                <li><a href="Myportfolio.html">My Portfolio</a></li>
+                <li><a href="Aboutme.html">About Me</a><li>
+                <li><a href="Project.html">Projects</a></li>
+               </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>Contact Information</h2>
+                <p>Email: <a href="mailto:dayrussell@my.lonestar.edu">Daylon Russell</a></p>
+                <p>Linkedin: <a href="https://www.linkedin.com/in/daylon-russell-0a5659157">Daylon Russell</a></p>
+            </section>
+            <section>
+                <h2>Contact Form</h2>
+                <form name="form" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="Email">Email:</label>
+                    <input  type="Email"  id="Email" name="Email" required><br>
+
+                    <label for="message">message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <section>
+                <!-- This section will have a map to my location -->
+                <h2>Location</h2>
+                <p>1102 East 4th Street</p>
+                <p>Cleveland TX 77327</p>
+                <p>United States</p>
+                <!--This google map has been embedded-->
+                <iframe class="box"
+                    title="main location" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.207858759993!2d-95.0761744!3d30.3609511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86475f69d9f13467%3A0x48a6bfa294441cd2!2s1102%20E%204th%20St%2C%20Cleveland%2C%20TX%2077327%2C%20USA!5e0!3m2!1sen!2sus!4v1717690000000!5m2!1sen!2sus"
+                    width="200" 
+                    height="100"
+                    allowfullscreen="">
+                </iframe>
+                <!-- The map is set to a width of 600 pixels and a height of 450 pixels -->    
+            </section>
+        </main>
+        </div>
+
+
+    </Body>
+
+
+
+
+
+
+
+
+</html>

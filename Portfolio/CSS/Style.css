@@ -1,0 +1,236 @@
+:root {
+    --heaader-color: #f77f00;
+    --font-color: rgb(219, 32, 32);
+    --font-family: times new roman, serif;
+}
+
+  body {
+    background-color: rgb(240, 204, 163);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+    
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+ }
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: rgb(253, 253, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+header {
+    background-color: var(--heaader-color);
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+section {
+    margin-bottom: 15px;
+    border: #2b1f12 4px ridge;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+ input, input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+ }
+
+  textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: content-box;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    resize: block;
+  }
+
+@media screen and (min-width: 576px) {
+  body {
+    background-color: #009688;
+    background-image:radial-gradient(whitesmoke, teal)
+  }
+
+  nav{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #4db6ac;
+    background-image:radial-gradient(whitesmoke, #4db6ac);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #004d40;
+    background-image:radial-gradient(whitesmoke, #004d40)
+  }
+}
+
+iframe-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+}
+
+iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  iframe-container {
+    padding-bottom: 75%;
+
+  }
+}
+
+@media only screen and (min-width: 420px) { 
+  textarea {
+    height: auto;
+    
+  }
+
+}
+  
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
